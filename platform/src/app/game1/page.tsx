@@ -14,7 +14,7 @@ const Game = () => {
     const audio = new Audio(`/happy-pop.mp3`);
     audio.play();
   };
-  const handleChoice = (playerSelection) => {
+  const handleChoice = (playerSelection: string) => {
     const randomChoice = choices[Math.floor(Math.random() * 3)];
     setPlayerChoice(playerSelection);
     setComputerChoice(randomChoice);
@@ -41,7 +41,7 @@ const Game = () => {
   };
   return (
     
-      <div className="contain w-full mt-10 py-[100px]">
+      <div className="contain w-full mt-10 py-[50px]">
         <center>
           <div className="images ml-4">
             <div
